@@ -31,8 +31,8 @@ int main(){
 
   printf("Heads: %d, Tails: %d \n",h,t);
 
-  if( h > t) printf("You won\n");
-  else if( h < t) printf("You lost\n");
+  if( h > t) printf("%s won\n",name);
+  else if( h < t) printf("%s lost\n",name);
   
   return 0;
 }
