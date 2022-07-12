@@ -3,13 +3,22 @@
 
 int main(){
 
-  int i,h,t;			/*head or tail */
+  int i,h=0,t=0; /*head or tail */
+  char name[10];
+
+  printf("Who are you? \n");
+  printf("> ");
+
+  scanf("%s",name);
+
+  printf("Hello, %s\n",name);
+
 
   printf("Tossing a coin ... \n"); /* 乱数使う */
 
   for( i = 0; i < 3; i++){
 
-    int r = rand()/RAND_MAX;
+    int r = rand() % 2;
 
     if( r == 1){
       printf("Round %d:Heads \n",i);
